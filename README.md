@@ -124,7 +124,9 @@ sudo microk8s.leave
 ! Master node ONLY!
 1. Install Docker
 ```
-$ apt install docker.io
+$ apt-get install docker.io
+$ sudo systemctl enable docker
+$ sudo systemctl start docker
 ```
 2. Create the Docker File for your application
 ! The Raspberry Pi is an ARM based processor architecture, therefore you can only run images that are compiled for ARM, you can't run x86/x64 architecture images.
