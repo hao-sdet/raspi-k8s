@@ -139,11 +139,11 @@ $ docker build -f Dockerfile -t my-application:local .
 ```
 4. Export Docker image
 ```
-$ docker save hello-python > hello-python.tar
+$ docker save my-application > my-application.tar
 ```
 5. Import the Docker image into Kuerbetes Repository
 ```
-$ microk8s ctr image import hello-python.tar
+$ microk8s ctr image import my-application.tar
 ```
 6. Verify that the Docker image has successfully imported
 ```
